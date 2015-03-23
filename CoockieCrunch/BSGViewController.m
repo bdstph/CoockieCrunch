@@ -11,6 +11,11 @@
 
 @implementation BSGViewController
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
