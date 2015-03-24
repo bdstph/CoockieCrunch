@@ -8,6 +8,14 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+@import SpriteKit;
+
+@class BSGLevel;
+
 @interface BSGMyScene : SKScene
+
+@property (strong, nonatomic) BSGLevel *level;
+
+- (void)addSpritesForCookies:(NSSet *)cookies;
 
 @end

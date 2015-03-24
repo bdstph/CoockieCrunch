@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29AE73C11AC161CF00187AFA /* BSGLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE73C01AC161CF00187AFA /* BSGLevel.m */; };
 		29EEC6121AC029E1008C824D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EEC6111AC029E1008C824D /* Foundation.framework */; };
 		29EEC6141AC029E1008C824D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EEC6131AC029E1008C824D /* CoreGraphics.framework */; };
 		29EEC6161AC029E1008C824D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EEC6151AC029E1008C824D /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 		29EEC6701AC02C03008C824D /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 29EEC65F1AC02C03008C824D /* Mining by Moonlight.mp3 */; };
 		29EEC6711AC02C03008C824D /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 29EEC6601AC02C03008C824D /* Scrape.wav */; };
 		29EEC6721AC02C03008C824D /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 29EEC6611AC02C03008C824D /* Sprites.atlas */; };
+		29EEC6761AC0322E008C824D /* BSGCoockie.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EEC6751AC0322E008C824D /* BSGCoockie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29AE73BF1AC161CF00187AFA /* BSGLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGLevel.h; sourceTree = "<group>"; };
+		29AE73C01AC161CF00187AFA /* BSGLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGLevel.m; sourceTree = "<group>"; };
 		29EEC60E1AC029E1008C824D /* CoockieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoockieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EEC6111AC029E1008C824D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29EEC6131AC029E1008C824D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +96,8 @@
 		29EEC65F1AC02C03008C824D /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		29EEC6601AC02C03008C824D /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 		29EEC6611AC02C03008C824D /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		29EEC6741AC0322E008C824D /* BSGCoockie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGCoockie.h; sourceTree = "<group>"; };
+		29EEC6751AC0322E008C824D /* BSGCoockie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGCoockie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 				29EEC62B1AC029E1008C824D /* BSGMyScene.h */,
 				29EEC62C1AC029E1008C824D /* BSGMyScene.m */,
 				29EEC6301AC029E1008C824D /* Images.xcassets */,
+				29EEC6731AC03202008C824D /* Objects */,
 				29EEC64D1AC02C03008C824D /* Resources */,
 				29EEC61A1AC029E1008C824D /* Supporting Files */,
 			);
@@ -242,6 +249,17 @@
 				29EEC6601AC02C03008C824D /* Scrape.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		29EEC6731AC03202008C824D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				29EEC6741AC0322E008C824D /* BSGCoockie.h */,
+				29EEC6751AC0322E008C824D /* BSGCoockie.m */,
+				29AE73BF1AC161CF00187AFA /* BSGLevel.h */,
+				29AE73C01AC161CF00187AFA /* BSGLevel.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,8 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29EEC6201AC029E1008C824D /* main.m in Sources */,
+				29AE73C11AC161CF00187AFA /* BSGLevel.m in Sources */,
 				29EEC62A1AC029E1008C824D /* BSGViewController.m in Sources */,
 				29EEC6241AC029E1008C824D /* BSGAppDelegate.m in Sources */,
+				29EEC6761AC0322E008C824D /* BSGCoockie.m in Sources */,
 				29EEC62D1AC029E1008C824D /* BSGMyScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +589,7 @@
 				29EEC6491AC029E1008C824D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29EEC64A1AC029E1008C824D /* Build configuration list for PBXNativeTarget "CoockieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +598,7 @@
 				29EEC64C1AC029E1008C824D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
