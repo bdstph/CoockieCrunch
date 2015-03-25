@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2967D3FF1AC2B15600581E1D /* BSGTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2967D3FE1AC2B15600581E1D /* BSGTile.m */; };
 		29AE73C11AC161CF00187AFA /* BSGLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE73C01AC161CF00187AFA /* BSGLevel.m */; };
 		29EEC6121AC029E1008C824D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EEC6111AC029E1008C824D /* Foundation.framework */; };
 		29EEC6141AC029E1008C824D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EEC6131AC029E1008C824D /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2967D3FD1AC2B15600581E1D /* BSGTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGTile.h; sourceTree = "<group>"; };
+		2967D3FE1AC2B15600581E1D /* BSGTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGTile.m; sourceTree = "<group>"; };
 		29AE73BF1AC161CF00187AFA /* BSGLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGLevel.h; sourceTree = "<group>"; };
 		29AE73C01AC161CF00187AFA /* BSGLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGLevel.m; sourceTree = "<group>"; };
 		29EEC60E1AC029E1008C824D /* CoockieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoockieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,11 +209,11 @@
 		29EEC64D1AC02C03008C824D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29EEC6611AC02C03008C824D /* Sprites.atlas */,
+				29EEC6541AC02C03008C824D /* Levels */,
 				29EEC64E1AC02C03008C824D /* Grid.atlas */,
 				29EEC64F1AC02C03008C824D /* Images */,
-				29EEC6541AC02C03008C824D /* Levels */,
 				29EEC65A1AC02C03008C824D /* Sounds */,
-				29EEC6611AC02C03008C824D /* Sprites.atlas */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -258,6 +261,8 @@
 				29EEC6751AC0322E008C824D /* BSGCoockie.m */,
 				29AE73BF1AC161CF00187AFA /* BSGLevel.h */,
 				29AE73C01AC161CF00187AFA /* BSGLevel.m */,
+				2967D3FD1AC2B15600581E1D /* BSGTile.h */,
+				2967D3FE1AC2B15600581E1D /* BSGTile.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				29EEC62A1AC029E1008C824D /* BSGViewController.m in Sources */,
 				29EEC6241AC029E1008C824D /* BSGAppDelegate.m in Sources */,
 				29EEC6761AC0322E008C824D /* BSGCoockie.m in Sources */,
+				2967D3FF1AC2B15600581E1D /* BSGTile.m in Sources */,
 				29EEC62D1AC029E1008C824D /* BSGMyScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

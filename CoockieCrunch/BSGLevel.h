@@ -9,14 +9,17 @@
 #import <Foundation/Foundation.h>
 
 #import "BSGCoockie.h"
+#import "BSGTile.h"
 
 static const NSInteger NumColumns = 9;
 static const NSInteger NumRows = 9;
 
 @interface BSGLevel : NSObject
 
-- (NSSet *)shuffle;
+- (instancetype)initWithFile:(NSString *)filename;
+- (BSGTile *)tileAtColumn:(NSInteger)column row:(NSInteger)row;
 
+- (NSSet *)shuffle;
 - (BSGCoockie *)cookieAtColumn:(NSInteger)column row:(NSInteger)row;
 
 @end

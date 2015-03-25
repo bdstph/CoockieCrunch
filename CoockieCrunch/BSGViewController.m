@@ -38,7 +38,7 @@
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Load the level.
-    self.level = [[BSGLevel alloc] init];
+    self.level = [[BSGLevel alloc] initWithFile:@"Level_1"];
     self.scene.level = self.level;
     
     // Present the scene.
@@ -67,6 +67,9 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
+
+
+#pragma mark game functions
 
 - (void)beginGame {
     [self shuffle];
